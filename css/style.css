@@ -1,0 +1,287 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Menü */
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.menu a i {
+    color: gray;
+}
+
+/* Butonlar */
+.auth button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.login {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.signup {
+    background: red;
+    color: white;
+}
+
+/* Konum Butonu */
+#location-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+:root {
+            --ys-red: #ca1616;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        .navbar-brand {
+            color: var(--ys-red);
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+        
+        .btn-outline-light {
+            border-color: #ddd;
+            color: #333;
+        }
+        
+        .btn-red {
+            background-color: var(--ys-red);
+            border-color: var(--ys-red);
+            color: white;
+        }
+        
+        .btn-red:hover {
+            background-color: #b01414;
+            border-color: #b01414;
+            color: white;
+        }
+        
+        .nav-link {
+            color: #666;
+        }
+        
+        .nav-link.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+        
+        .nav-link:hover {
+            color: var(--ys-red);
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+        
+        .location-display {
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .location-display:hover {
+            color: var(--ys-red);
+        }
+        
+        .location-modal {
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 15px;
+            width: 500px;
+            top: 40px;
+            left: -180px;
+        }
+        
+        .lang-dropdown {
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            width: 160px;
+            top: 40px;
+            right: 0;
+        }
+        
+        .lang-option {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        .lang-option:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .lang-option.selected {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .lang-option.selected::after {
+            content: "✓";
+            color: var(--ys-red);
+        }
+        
+        .search-bar {
+            position: relative;
+        }
+        
+        .search-bar input {
+            border-radius: 25px;
+            padding-left: 40px;
+            height: 50px;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .logocss{
+            width: 120px;
+        }
+
+        /* Mutfak İhtiyaçları Section Styles */
+.mutfak-ihtiyaclari-section .section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.add-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.add-button:hover {
+    transform: scale(1.1);
+}
+
+.current-price {
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.discount-badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.product-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-image-container img {
+        height: 200px;
+    }
+}
+
+.fotograf{
+    object-fit: cover;
+}

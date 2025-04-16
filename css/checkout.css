@@ -1,0 +1,235 @@
+/* Ödeme Sayfası Stilleri */
+.checkout-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-item:last-child {
+    border-bottom: none;
+}
+
+.checkout-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.payment-method {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-method:hover {
+    border-color: var(--ys-red);
+}
+
+.payment-method.selected {
+    border-color: var(--ys-red);
+    box-shadow: 0 0 0 1px var(--ys-red);
+}
+
+.credit-card-form {
+    max-width: 100%;
+}
+
+.card-input-container {
+    position: relative;
+}
+
+.card-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.coupon-section {
+    margin-bottom: 20px;
+}
+
+.tip-section {
+    margin-top: 20px;
+}
+
+.tip-button {
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tip-button:hover,
+.tip-button.active {
+    background-color: var(--ys-red);
+    color: white;
+    border-color: var(--ys-red);
+}
+
+.terms-section {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.address-section {
+    margin-bottom: 20px;
+}
+
+.address-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.address-card:hover {
+    border-color: var(--ys-red);
+}
+
+.address-card.selected {
+    border-color: var(--ys-red);
+    background-color: #fff5f5;
+}
+
+.address-card .address-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.address-card .address-details {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.address-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.order-summary-card {
+    position: sticky;
+    top: 20px;
+}
+
+.promocode-tag {
+    display: inline-block;
+    background-color: #f8f9fa;
+    color: var(--ys-red);
+    border: 1px dashed var(--ys-red);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.promocode-tag:hover {
+    background-color: #fff0f0;
+}
+
+.promocode-tag i {
+    margin-right: 5px;
+}
+
+.btn-red {
+    background-color: var(--ys-red);
+    border-color: var(--ys-red);
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #b01414;
+    border-color: #b01414;
+    color: white;
+}
+
+.delivery-info {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f8e9;
+    color: #33691e;
+    font-size: 0.9rem;
+}
+
+.delivery-info i {
+    margin-right: 5px;
+}
+
+.coupon-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    height: 24px;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 992px) {
+    .tip-button {
+        margin-right: 5px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-section {
+        padding: 15px;
+    }
+    
+    .tip-section .d-flex {
+        flex-wrap: wrap;
+    }
+    
+    .tip-button {
+        margin-bottom: 5px;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .checkout-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .checkout-item-image {
+        margin-bottom: 10px;
+    }
+}
